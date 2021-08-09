@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+
+
+</head>
+
+<style>
+    body {
+        margin: 5%;
+        background-color: darkslategray;
+        color: khaki;
+    }
+
+    li {
+        line-height: 270%;
+        font-family: 'Mate SC', serif;
+    }
+
+    p {
+        font-family: 'Acme', sans-serif;
+    }
+
+    button {
+        background-color: lightsteelblue;
+        background-image: linear-gradient(45deg, khaki, rgb(193, 218, 104));
+        border-radius: 4px;
+        align-self: center;
+        color: rgb(77, 77, 34);
+        font-family: 'Mate SC', serif;
+        font-weight: 600;
+        height: 200%;
+        width: 25%;
+        padding: 0, 20%;
+        text-align: center;
+        margin-left: 37.5%;
+        border: 2px solid rgb(244, 244, 247);
+    }
+</style>
+
+<body>
+    <form>
+
+        <ol>
+            <li> Name : <input placeholder="Enter your name" type="text"> </li>
+            <li> Photo : <input placeholder="upload your prettiest photo" type="file"> </li>
+            <li>Date of Birth : <input type="date"></li>
+            <li> E-mail Address : <input type="email"> </li>
+            <li> Facebook Address : <input type="url"></li>
+            <li>
+                <fieldset>
+                    <legend>Which cinematic universe do you like most?</legend>
+                    <p><label for="mcu"> <input type="radio" id="mcu" name="cu">Marvel</label></p>
+                    <p><label for="dc"><input type="radio" id="dc" name="cu">DC</label></p>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Choose your favorite film franchise</legend>
+                    <p><label for="poc"><input type="checkbox" name="" id="poc">Pirates of Caribbean</label></p>
+                    <p><label for="sw"><input type="checkbox" name="" id="sw">Star Wars</label></p>
+                    <p><label for="lor"><input type="checkbox" name="" id="lor">The Lord of the Rings</label></p>
+                    <p><label for="hp"><input type="checkbox" name="" id="hp">Harry Potter</label></p>
+                    <p><label for="mi"><input type="checkbox" name="" id="mi">Mission Impossible</label></p>
+                    <p><label for="Godfather"><input type="checkbox" name="" id="Godfather"></label>The Godfather</p>
+                    <p><label for="ff"><input type="checkbox" name="" id="ff">Fast & Furious</label></p>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Do you consider yourself a cinephile?</legend>
+                    <p><label for="yes"><input type="radio" name="q" id="yes">Yes</label></p>
+                    <p><label for="no"><input type="radio" name="q" id="no">No</label></p>
+                </fieldset>
+            </li>
+            <li>Tell us why you think you're a cinephile <br> <textarea
+                    placeholder="Anything that comes in your head, bro" cols="30" rows="10"></textarea> </li>
+        </ol>
+        <button type="submit">Shoot</button>
+    </form>
+
+</body>
+
+</html>
